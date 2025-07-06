@@ -6,7 +6,7 @@ A reproducible Nextflow pipeline for predicting functional mutation hotspots in 
 
 ## Quick Start
 
-- Place your required input data in the `data/` folder.
+- Place your required input data in the `data/` folder.{the cleand file of protein families, mutations and hotspots is uploaded}
 - Run the pipeline using Nextflow.
 - Outputs will appear in the `results/` folder.
 
