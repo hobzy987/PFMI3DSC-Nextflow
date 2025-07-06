@@ -10,7 +10,7 @@ A reproducible Nextflow pipeline for predicting functional mutation hotspots in 
 - Run the pipeline using Nextflow.
 - Outputs will appear in the `results/` folder.
 
-## For full documentation, see the comments in each file and [your manuscript](#).
+## For full documentation, see the comments in each file and [under review](#).
 
 # PFMI3DSC-Nextflow Workflow Documentation
 
