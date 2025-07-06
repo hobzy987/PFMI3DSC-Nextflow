@@ -91,5 +91,8 @@ Replace `<ACCID1,ACCID2,...>` with your comma-separated list of UniProt accessio
 - All processes use relative paths for outputs, and Nextflow's `publishDir` ensures only the HTML summary files are copied to the root `results/` directory.
 - The workflow is written in Nextflow DSL2.
 - Each process is modular and can be adapted or extended as needed.
+- The protein family information is parsed using the `similar.txt` file from UniProtKB. The full file can be accessed at:  
+  [https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/docs/similar.txt](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/docs/similar.txt)
+- The 3D protein structures used in this analysis are obtained from the AlphaFold Protein Structure Database, and the version currently integrated is **AlphaFold v4**, which offers improved accuracy over previous versions.
 
 ---
