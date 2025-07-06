@@ -11,3 +11,7 @@ pdb_files_*/
 work/
 .nextflow*
 .DS_Store
+work/
+.cache/
+*.nextflow*
+!.nextflow.config
