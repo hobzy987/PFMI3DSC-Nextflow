@@ -91,8 +91,30 @@ Replace `<ACCID1,ACCID2,...>` with your comma-separated list of UniProt accessio
 - All processes use relative paths for outputs, and Nextflow's `publishDir` ensures only the HTML summary files are copied to the root `results/` directory.
 - The workflow is written in Nextflow DSL2.
 - Each process is modular and can be adapted or extended as needed.
-- The protein family information is parsed using the `similar.txt` file from UniProtKB. The full file can be accessed at:  
+
+---
+
+---
+
+### Additional Notes
+
+- **Protein Family Classification**  
+  Protein family information is parsed from UniProtKB using the `similar.txt` classification file:  
   [https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/docs/similar.txt](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/complete/docs/similar.txt)
-- The 3D protein structures used in this analysis are obtained from the AlphaFold Protein Structure Database, and the version currently integrated is **AlphaFold v4**, which offers improved accuracy over previous versions.
+
+- **Structure Prediction**  
+  All protein 3D structures are obtained from the AlphaFold Protein Structure Database. This project uses the most recent release, **AlphaFold v4**, which offers enhanced prediction accuracy.
+
+- **Mutation Annotation Source**  
+  Cancer-related mutation data is sourced from the **BioMuta** database, provided by OncoMX:  
+  [https://oncomx.org/static/data/bmuta.csv](https://oncomx.org/static/data/bmuta.csv)
+
+- **3D Mutation Hotspot Data**  
+  Structural hotspot mutation data were obtained from 3DHotspots:  
+  [https://www.3dhotspots.org/files/3d_hotspots.xls](https://www.3dhotspots.org/files/3d_hotspots.xls)
+
+- **Cancer Hotspots Resource**  
+  Additional hotspot mutation annotations were downloaded from the Cancer Hotspots database:  
+  [https://www.cancerhotspots.org/#/download](https://www.cancerhotspots.org/#/download)
 
 ---
