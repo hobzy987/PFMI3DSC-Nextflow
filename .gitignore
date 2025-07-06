@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+results/
+*.log
+*.tar.gz
+*.pkl
+*.html
+*.csv
+*.m8
+pdb_files_*/
+work/
+.nextflow*
+.DS_Store
